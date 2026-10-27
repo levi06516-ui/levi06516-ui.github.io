@@ -12,6 +12,8 @@
       --text: #c9d1d9;
       --text-bright: #f0f6fc;
       --accent: #58a6ff;
+      --btn-bg: #21262d;
+      --btn-hover: #30363d;
     }
 
     * {
@@ -49,6 +51,32 @@
       font-size: 1.2rem;
       color: var(--accent);
       font-weight: 600;
+      margin-bottom: 1.2rem;
+    }
+
+    /* Botón de GitHub */
+    .github-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var(--btn-bg);
+      color: var(--text-bright);
+      border: 1px solid var(--border);
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .github-btn:hover {
+      background-color: var(--btn-hover);
+      border-color: #8b949e;
+    }
+
+    .github-btn svg {
+      fill: currentColor;
     }
 
     section {
@@ -117,6 +145,14 @@
     <header>
       <h1>👋 ¡Hola a todos, soy Jeremy!</h1>
       <p class="subtitle">Ingeniero de Software | Desarrollador Full-Stack | Apasionado por los Sistemas Escalables</p>
+      
+      <!-- Botón hacia el perfil de GitHub -->
+      <a href="https://github.com/levi06516-ui" target="_blank" rel="noopener noreferrer" class="github-btn">
+        <svg height="20" width="20" viewBox="0 0 16 16" version="1.1">
+          <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+        </svg>
+        Ver Perfil de GitHub
+      </a>
     </header>
 
     <section>
@@ -143,41 +179,4 @@
         <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
         <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
         <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-        <img src="https://img.shields.io/badge/SQL%20Server-CC292B?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" alt="SQL Server" />
-        <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-        <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-      </div>
-    </section>
-
-    <section>
-      <h2>📊 Estadísticas de GitHub</h2>
-      <div class="stats-grid">
-        <div class="card">
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=levi06516-ui&layout=compact&theme=tokyonight&hide_border=true&locale=es" alt="Top Languages" />
-        </div>
-        <div class="card">
-          <img src="https://github-readme-stats.vercel.app/api?username=levi06516-ui&show_icons=true&theme=tokyonight&hide_border=true&locale=es" alt="GitHub Stats" />
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>📌 Proyectos Destacados</h2>
-      <div class="projects-grid">
-        <div class="card">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=levi06516-ui&repo=TowerDefense&theme=tokyonight&hide_border=true&locale=es" alt="TowerDefense" />
-        </div>
-        <div class="card">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=levi06516-ui&repo=OficiosYA&theme=tokyonight&hide_border=true&locale=es" alt="OficiosYA" />
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p>© Jeremy Guamán — Publicado con GitHub Pages</p>
-    </footer>
-  </div>
-
-</body>
-</html>
+        <img src="
