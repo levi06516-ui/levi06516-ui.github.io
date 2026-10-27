@@ -49,11 +49,8 @@
     .logo {
       font-weight: 700;
       font-size: 1.2rem;
-      color: var(--text-bright);
-    }
-
-    .logo span {
       color: var(--accent);
+      letter-spacing: 1px;
     }
 
     .nav-links {
@@ -80,7 +77,7 @@
       padding: 0 1.5rem;
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 1.2rem;
     }
 
     .badge-status {
@@ -103,8 +100,15 @@
       border-radius: 50%;
     }
 
+    .user-name {
+      font-size: 1.8rem;
+      color: var(--text-bright);
+      font-weight: 600;
+      margin-bottom: -0.5rem;
+    }
+
     h1 {
-      font-size: 3rem;
+      font-size: 2.8rem;
       color: var(--text-bright);
       line-height: 1.2;
     }
@@ -114,14 +118,14 @@
     }
 
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       max-width: 750px;
     }
 
     .cta-buttons {
       display: flex;
       gap: 1rem;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       flex-wrap: wrap;
     }
 
@@ -166,7 +170,7 @@
     }
 
     section {
-      margin-top: 5rem;
+      margin-top: 4.5rem;
     }
 
     .section-title {
@@ -270,7 +274,7 @@
       text-decoration: underline;
     }
 
-    /* Personal Timeline / Hitos */
+    /* Personal Timeline */
     .timeline {
       border-left: 2px solid var(--border);
       padding-left: 1.5rem;
@@ -320,7 +324,7 @@
 
   <!-- Navegación -->
   <nav>
-    <div class="logo">&lt;Jeremy<span>Guamán</span> /&gt;</div>
+    <div class="logo">JG</div>
     <ul class="nav-links">
       <li><a href="#sobre-mi">Sobre mí</a></li>
       <li><a href="#skills">Stack</a></li>
@@ -334,10 +338,15 @@
     <div class="badge-status">
       <span class="dot"></span> Disponible para nuevos proyectos e investigación
     </div>
+
+    <!-- Nombre presentado abajo en lugar de la barra superior -->
+    <h2 class="user-name">Jeremy Guamán</h2>
+
     <h1>Construyendo software <span>escalable</span>, seguro y centrado en la calidad.</h1>
     <p>
       Estudiante de Ingeniería de Software enfocado en arquitectura de microservicios, desarrollo web full-stack, agentes con Inteligencia Artificial y simulaciones de red.
     </p>
+
     <div class="cta-buttons">
       <a href="https://github.com/levi06516-ui" target="_blank" class="btn btn-primary">
         <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
@@ -487,7 +496,7 @@
   </main>
 
   <footer>
-    <p>© Jeremy Guamán — Diseñado & Desarrollado en GitHub Pages</p>
+    <p>© Jeremy Guamán — Publicado en GitHub Pages</p>
   </footer>
 
 </body>
